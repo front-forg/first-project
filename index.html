@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Автосервис</h1>
+        <nav>
+            <a href="#services-section">Услуги</a>
+            <a href="#diagnostic-section">Запись на диагностику</a>
+            <a href="#reviews-section">Отзывы</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Профессиональный ремонт и обслуживание</h2>
+            <p>Качественная диагностика, опытные мастера и современное оборудование для вашего автомобиля.</p>
+            <a href="#diagnostic-section" class="btn-action">Записаться онлайн</a>
+        </section>
+
+
+        <section id="services-section">
+            <h2>Популярные услуги</h2>
+            <ul class="services-list">
+                <li data-service="Компьютерная диагностика">
+                    <span class="service-name">Компьютерная диагностика</span>
+                    <span class="service-price">от 1 000 ₽</span>
+                </li>
+                <li data-service="Диагностика подвески">
+                    <span class="service-name">Диагностика подвески</span>
+                    <span class="service-price">от 800 ₽</span>
+                </li>
+                <li data-service="Диагностика тормозной системы">
+                    <span class="service-name">Диагностика тормозной системы</span>
+                    <span class="service-price">от 700 ₽</span>
+                </li>
+                
+                <li data-service="Ремонт подвески и сход-развал">
+                    <span class="service-name">Ремонт подвески и сход-развал</span>
+                    <span class="service-price">от 2 500 ₽</span>
+                </li>
+                <li data-service="Ремонт двигателей и КПП">
+                    <span class="service-name">Ремонт двигателей и КПП</span>
+                    <span class="service-price">от 12 000 ₽</span>
+                </li>
+                <li data-service="Ремонт тормозной системы">
+                    <span class="service-name">Ремонт тормозной системы</span>
+                    <span class="service-price">от 1 500 ₽</span>
+                </li>
+                <li data-service="Ремонт выхлопных систем">
+                    <span class="service-name">Ремонт выхлопных систем</span>
+                    <span class="service-price">от 2 000 ₽</span>
+                </li>
+                
+                <li data-service="Замена масла и расходников">
+                    <span class="service-name">Замена масла и расходников</span>
+                    <span class="service-price">от 1 200 ₽</span>
+                </li>
+                <li data-service="Замена тормозных колодок/дисков">
+                    <span class="service-name">Замена тормозных колодок/дисков</span>
+                    <span class="service-price">от 1 400 ₽</span>
+                </li>
+                <li data-service="Замена ремня/цепи ГРМ">
+                    <span class="service-name">Замена ремня/цепи ГРМ</span>
+                    <span class="service-price">от 5 000 ₽</span>
+                </li>
+                
+                <li data-service="Обслуживание автокондиционеров">
+                    <span class="service-name">Обслуживание автокондиционеров</span>
+                    <span class="service-price">от 1 800 ₽</span>
+                </li>
+                <li data-service="Шиномонтаж и балансировка">
+                    <span class="service-name">Шиномонтаж и балансировка</span>
+                    <span class="service-price">от 1 600 ₽</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="diagnostic-section">
+            <h2>Запись на диагностику</h2>
+            <form id="add_diagnostics">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" required placeholder="Иван Иванов">
+
+                <label for="telephone">Телефон:</label>
+                <input type="text" id="telephone" required placeholder="+7 (999) 123-45-67">
+
+                <label for="name_car">Марка и модель автомобиля:</label>
+                <input type="text" id="name_car" required placeholder="Toyota Camry">
+
+                <label for="problem">Выберите проблему:</label>
+                <select id="problem" required>
+                    <option value="">Выберите из списка</option>
+                    <option value="Компьютерная диагностика">Компьютерная диагностика (от 1 000 ₽)</option>
+                    <option value="Диагностика подвески">Диагностика подвески (от 800 ₽)</option>
+                    <option value="Диагностика тормозной системы">Диагностика тормозной системы (от 700 ₽)</option>
+                    <option value="Ремонт подвески и сход-развал">Ремонт подвески и сход-развал (от 2 500 ₽)</option>
+                    <option value="Ремонт двигателей и КПП">Ремонт двигателей и КПП (от 12 000 ₽)</option>
+                    <option value="Ремонт тормозной системы">Ремонт тормозной системы (от 1 500 ₽)</option>
+                    <option value="Ремонт выхлопных систем">Ремонт выхлопных систем (от 2 000 ₽)</option>
+                    <option value="Замена масла и расходников">Замена масла и расходников (от 1 200 ₽)</option>
+                    <option value="Замена тормозных колодок/дисков">Замена тормозных колодок/дисков (от 1 400 ₽)</option>
+                    <option value="Замена ремня/цепи ГРМ">Замена ремня/цепи ГРМ (от 5 000 ₽)</option>
+                    <option value="Обслуживание автокондиционеров">Обслуживание автокондиционеров (от 1 800 ₽)</option>
+                    <option value="Шиномонтаж и балансировка">Шиномонтаж и балансировка (от 1 600 ₽)</option>
+                </select>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+            
+            <h3>Текущие записи</h3>
+            <div id="recording"></div>
+        </section>
+
+
+        <section id="reviews-section">
+            <h2>Оставить отзыв</h2>
+            <form id="reviewForm">
+                <label for="review_name">Ваше имя:</label>
+                <input type="text" id="review_name" required placeholder="Алексей">
+
+                <label for="rating">Оценка:</label>
+                <select id="rating" required>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+
+                <label for="review_text">Ваш отзыв:</label>
+                <textarea id="review_text" required placeholder="Поделитесь впечатлениями о нашей работе..."></textarea>
+
+                <button type="submit">Опубликовать отзыв</button>
+            </form>
+
+            <h3>Отзывы клиентов</h3>
+            <div id="reviews"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Автосервис PRO. Все права защищены.</p>
+        <p>Разработано с заботой о вашем авто.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
